@@ -1,3 +1,116 @@
 body {
     background-color: #eee;
 }
+
+.inner-container {
+    max-width: 14.5rem;
+    height: 63.9375rem;
+    background-color:  #FFF;
+    padding: 1rem;
+}
+
+.main-menu {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1.5rem;
+}
+
+h1 {
+    font-family: "Nunito", sans-serif;
+    color: #727B81;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 150%;
+}
+span {
+    color: #0A91DE;
+}
+
+p,
+nav {
+    font-family: "Manrope", sans-serif;
+}
+p {
+    color: #727B81;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.main-menu,
+.sub-menu {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.main-menu li {
+    position: relative;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+a {
+    color: #666F74;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+    color: #666F74;
+    text-decoration: underline;
+}
+header {
+    border: 1px solid #DDD;
+    margin-left: 6.25rem;
+}
+.main-menu li a {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: 500;
+}
+.sub-menu {
+    position: absolute;
+    left: 9.62rem;
+    top: 0.38rem;
+    border: 1px solid #0A91DE;
+    border-radius: 0.4375rem;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 #DDD;
+    min-width: 10.9rem;
+    padding: 1.12rem;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+ 
+}
+
+.sub-menu li {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.125rem;
+    line-height: 150%;
+    font-weight: 500;
+        
+}
+
+.sub-menu li:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.sub-menu li:hover a {
+    color: #0A91DE;
+    font-weight: 700;
+    text-decoration: none;
+}
+.main-menu li:hover .sub-menu {
+    visibility: visible;
+    opacity: 1;
+}
