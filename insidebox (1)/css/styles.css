@@ -57,7 +57,6 @@ p {
 a {
     color: #666F74;
     text-decoration: none;
-    transition: all 0.3s;
 }
 
 a:hover,
@@ -77,8 +76,8 @@ header {
 }
 .sub-menu {
     position: absolute;
-    left: 9.62rem;
-    top: 0.38rem;
+    left: 8rem;
+    top: -1rem;
     border: 1px solid #0A91DE;
     border-radius: 0.4375rem;
     background: #FFF;
