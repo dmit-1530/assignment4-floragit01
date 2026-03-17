@@ -4,7 +4,7 @@ body {
 
 .inner-container {
     max-width: 14.5rem;
-    height: 63.9375rem;
+    height: 100vh;
     background-color:  #FFF;
     padding: 1rem;
 }
